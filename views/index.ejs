@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .button {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        </style>
+  <body>
+    <style>
+      h4 {
+        text-align: right;
+      }
+    </style>
+    <h4><a href="/logout">Logout</a></h4>
+
+    
+    <p><%= Message%></p>
+    
+
+    <form action="/save">
+      Vote:
+      <button
+        name="subject"
+        id="vote"
+        type="submit"
+        class="button"
+        value="voting 1$<%= email %>"
+      >
+        Voting 1
+      </button>
+      <button
+        name="subject"
+        id="vote"
+        type="submit"
+        class="button"
+        value="voting 2$<%= email %>"
+      >
+        Voting 2
+      </button>
+      <button
+        name="subject"
+        id="vote"
+        type="submit"
+        class="button"
+        value="voting 3$<%= email %>"
+      >
+        Voting 3
+      </button>
+      <button
+        name="subject"
+        id="vote"
+        type="submit"
+        class="button"
+        value="voting 4$<%= email %>"
+      >
+        Voting 4
+      </button>
+      <br /><br />
+    </form>
+  </body>
+</html>

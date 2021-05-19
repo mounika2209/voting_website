@@ -1,0 +1,154 @@
+<html>
+   <style>
+       [class*='effect-']:hover, [class*='effect-']:active, [class*='effect-']:focus{
+    background:none;
+}
+[class*='effect-']:after {
+      content: "";
+    position: absolute;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    z-index: -1;
+}
+.rounded[class*='effect-']:after {
+      border-radius:5px;
+}
+.full-rounded[class*='effect-']:after {
+      border-radius:20em;
+}
+.effect-left:after{
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+.effect-left:hover:after{
+    width:100%;    
+}
+.effect-right:after{
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 0;
+}
+.effect-right:hover:after{
+    width:100%;    
+}
+.effect-up:after{
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 0;
+}
+.effect-up:hover:after{
+    height:100%;    
+}
+.effect-down:after{
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 0;
+}
+.effect-down:hover:after{
+    height:100%;    
+}
+.effect-horiz:after{
+    height: 100%;
+    left: 50%;
+    top: 0;
+    width: 0;
+}
+.effect-horiz:hover:after{
+    width:100%;
+    left:0;
+}
+.effect-vart:after{
+    width: 100%;
+    top: 50%;
+    left: 0;
+    height: 0;
+}
+.effect-vart:hover:after{
+    height:100%;
+    top:0;
+}
+.effect-box:after{
+    width: 0;
+    top: 50%;
+    left: 50%;
+    height: 0;
+}
+.effect-box:hover:after{
+    width: 100%;
+    top: 0;
+    left: 0;
+    height:100%;
+}
+.effect-down-left:after{
+    width: 0;
+    top: 0;
+    left: 0;
+    height: 0;
+}
+.effect-down-left:hover:after{
+    width: 100%;
+    height:100%;
+}
+.effect-up-right:after{
+    width: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+}
+.effect-up-right:hover:after{
+    width: 100%;
+    height:100%;
+}
+.green.effect-glow:hover{
+    box-shadow: 0 0 10px 0 #10bc98 inset, 0 0 10px 2px #10bc98;
+}
+.light-green.effect-glow:hover{
+    box-shadow: 0 0 10px 0 #87bc58 inset, 0 0 10px 2px #87bc58;
+}
+.orange.effect-glow:hover{
+    box-shadow: 0 0 10px 0 #e77e22 inset, 0 0 10px 2px #e77e22;
+}
+.blue.effect-glow:hover{
+    box-shadow: 0 0 10px 0 #3cbce1 inset, 0 0 10px 2px #3cbce1;
+}
+.purple.effect-glow:hover{
+    box-shadow: 0 0 10px 0 #9a59b5 inset, 0 0 10px 2px #9a59b5;
+}
+.yellow.effect-glow:hover{
+    box-shadow: 0 0 10px 0 #fac75a inset, 0 0 10px 2px #fac75a;
+}
+.grey.effect-glow:hover{
+    box-shadow: 0 0 10px 0 #4c4c4c inset, 0 0 10px 2px #4c4c4c;
+}
+.red.effect-glow:hover{
+    box-shadow: 0 0 10px 0 #e84c3d inset, 0 0 10px 2px #e84c3d;
+}
+.dark-blue.effect-glow:hover{
+    box-shadow: 0 0 10px 0 #34495e inset, 0 0 10px 2px #34495e;
+}
+.ash-grey.effect-glow:hover{
+    box-shadow: 0 0 10px 0 #bec3c7 inset, 0 0 10px 2px #bec3c7;
+}
+       </style>
+    <body>
+        <div>
+            <a class="btn green" href="#">Button</a>
+            <a class="btn light-green" href="#">Button</a>
+            <a class="btn orange" href="#">Button</a>
+            <a class="btn blue" href="#">Button</a>
+            <a class="btn purple" href="#">Button</a>
+            <a class="btn yellow" href="#">Button</a>
+            <a class="btn grey" href="#">Button</a>
+            <a class="btn red" href="#">Button</a>
+            <a class="btn dark-blue" href="#">Button</a>
+            <a class="btn ash-grey" href="#">Button</a>
+        </div>
+    </body>
+</html>
